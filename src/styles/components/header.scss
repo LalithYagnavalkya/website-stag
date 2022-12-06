@@ -1,0 +1,62 @@
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+.header {
+  position: fixed;
+  width: 100%;
+  height: 128px;
+  z-index: 4;
+  @include media("<=phone") {
+    height: 96px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    img {
+      margin-top: -10px;
+      width: 42px;
+    }
+    a {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      color: $black;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+  .nav {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    span {
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+    .contact-btn {
+      &:hover {
+        color: rgb(112, 23, 163);
+        transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+    }
+    .price-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #000000;
+      border-radius: 40px;
+      padding: 9.5px 20px;
+      span {
+        padding: 0;
+      }
+      &:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+    }
+  }
+}
