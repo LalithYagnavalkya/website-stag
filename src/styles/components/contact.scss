@@ -112,6 +112,7 @@
     }
   }
   .contact-container-submit-btn {
+    cursor: pointer;
     width: 535px;
     height: 54px;
     background: #1a1a1a;
@@ -126,6 +127,9 @@
       font-size: 16px;
       line-height: 30px;
       color: #ffffff;
+    }
+    &:hover {
+      filter: brightness(2);
     }
   }
 }
