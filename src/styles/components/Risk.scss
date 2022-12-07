@@ -2,6 +2,71 @@
   width: 100%;
   height: 100vh;
   .risk-row {
-    height: 50vh;
+    position: relative;
+    display: flex;
+    column-gap: 70px;
+    .background-video {
+      overflow: hidden;
+      margin-bottom: -4px;
+      video {
+        margin-top: -1px;
+        width: 55vw;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    .risk-disclo {
+      // background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .risk-disclo-head {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+        color: #0c0c0c;
+      }
+      p {
+        width: 570px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 171%;
+        color: #757575;
+      }
+    }
+  }
+  .risk-row-2 {
+    display: flex;
+    height: 70vh;
+    justify-content: space-between;
+    align-items: center;
+    .background-video {
+      width: 45vw;
+      height: 70vh;
+      overflow: hidden;
+      video {
+        margin-left: -4px;
+        margin-top: -1px;
+      }
+    }
+    .risk-content {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      .risk-content-text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+        width: 447px;
+        color: #0c0c0c;
+      }
+    }
   }
 }

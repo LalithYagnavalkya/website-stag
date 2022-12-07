@@ -8,7 +8,7 @@ import "../styles/components/Whatwedo.scss";
 gsap.registerPlugin(ScrollTrigger);
 const Whatwedo = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [900, -1350]);
+  const x = useTransform(scrollYProgress, [0, 1], [350, -150]);
 
   const myLine = useRef();
   const sentence = useRef();
@@ -107,7 +107,7 @@ const Whatwedo = () => {
           </div>
         </div>
         <motion.div className="what-we-do-slide-text" style={{ x }}>
-          Invest in your Future
+          Invest Better
         </motion.div>
       </section>
     </div>

@@ -10,6 +10,7 @@ import CSSRulePlugin from "gsap/CSSRulePlugin";
 import { useEffect, useRef } from "react";
 import Whatwedo from "./components/Whatwedo";
 import Risk from "./components/Risk";
+import Contact from "./components/Contact";
 gsap.registerPlugin(CSSRulePlugin);
 function App() {
   const headlines = useRef(null);
