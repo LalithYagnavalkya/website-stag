@@ -17,11 +17,16 @@ html {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include media("<=phone") {
+    overflow-x: hidden;
+  }
   // overflow-x: hidden;
 }
 body {
   visibility: hidden;
-  overflow-y: hidden;
+  @include media("<=phone") {
+    overflow-x: hidden;
+  }
 }
 .container {
   width: 1560px;

@@ -2,9 +2,11 @@ import gsap, { Power2 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntroOverlay from "../components/IntroOverlay";
 import Risk from "../components/Risk";
+import Social from "../components/Social";
 import Whatwedo from "../components/Whatwedo";
 import "../styles/App.scss";
 
@@ -72,6 +74,8 @@ const Home = () => {
       <Banner headlines={headlines} myBackground={myBackground} />
       <Whatwedo />
       <Risk />
+      <Footer />
+      <Social />
     </div>
   );
 };

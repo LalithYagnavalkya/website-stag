@@ -1,0 +1,12 @@
+.footer-container {
+  display: flex;
+  //   background-color: black;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  img {
+    height: 65px;
+  }
+}

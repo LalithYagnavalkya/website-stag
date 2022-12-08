@@ -8,7 +8,7 @@ import "../styles/components/Whatwedo.scss";
 gsap.registerPlugin(ScrollTrigger);
 const Whatwedo = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [350, -250]);
+  const x = useTransform(scrollYProgress, [0, 1], [350, -150]);
 
   const myLine = useRef();
   const sentence = useRef();
