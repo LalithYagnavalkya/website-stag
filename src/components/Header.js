@@ -10,6 +10,7 @@ const Header = () => {
             <a href="/">Stag Investments.</a>
           </div>
           <div className="nav">
+            <span className="contact-btn">About</span>
             <span className="contact-btn">Contact us</span>
             <div className="price-btn">
               <span>Pricing</span>

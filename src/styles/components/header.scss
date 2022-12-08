@@ -5,6 +5,7 @@
   width: 100%;
   height: 128px;
   z-index: 4;
+
   @include media("<=phone") {
     height: 96px;
   }
@@ -13,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 1rem;
+    // margin-left: -5rem;
     img {
       margin-top: -10px;
       width: 42px;

@@ -13,7 +13,7 @@ const Banner = ({ headlines, myBackground }) => {
 
   return (
     <section className="main">
-      <div ref={myBackground} data-speed="4" className="container">
+      <div ref={myBackground} className="container">
         <div className="row">
           <h2>
             <div className="line">
@@ -28,8 +28,8 @@ const Banner = ({ headlines, myBackground }) => {
             <div className="my-background-image">
               <img
                 className="invest-img"
-                src={require(`../assets/invest.jpg`)}
-                alt=""
+                src={require(`../assets/bull.jpg`)}
+                alt="stock market"
               />
             </div>
           </>
