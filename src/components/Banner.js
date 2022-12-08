@@ -35,7 +35,7 @@ const Banner = ({ headlines, myBackground }) => {
           </>
 
           <div className="btn-row">
-            <a href="/">
+            <a href="/pricing">
               Look at our pricing <RightArrow />
             </a>
           </div>

@@ -17,6 +17,7 @@ html {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // overflow-x: hidden;
 }
 body {
   visibility: hidden;
@@ -42,7 +43,7 @@ body {
   .row {
     display: flex;
     height: 100%;
-    padding: 0 32px;
+    // padding: 0 32px;
     @include media("<=phone") {
       padding: 0 16px;
     }

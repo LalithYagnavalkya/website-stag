@@ -6,6 +6,9 @@
   margin: 0 auto;
   height: 90%;
   margin-top: 7rem;
+  @include media("<=phone") {
+    display: none;
+  }
   @include media("<=1560px") {
     width: 1280px;
     min-width: 1280px;

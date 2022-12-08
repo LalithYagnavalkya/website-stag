@@ -5,7 +5,8 @@
   height: 100vh; //fallback option
   //   height: calc(var(--vh, 1vh) * 50);
   background-color: $white;
-  padding: 0 32px;
+  // padding: 0 32px;
+
   .what-we-do-container {
     height: 100%;
     display: flex;
@@ -29,6 +30,10 @@
     .what-we-do-horizontal-line {
       padding: 0 6rem;
       overflow: hidden;
+      @include media("<=phone") {
+        overflow: visible;
+        padding: 0 2rem;
+      }
       hr {
         transform-origin: left;
         transition: transform 0.25s ease-out;
@@ -49,6 +54,9 @@
         }
         span:nth-child(2) {
           margin-right: -25rem;
+          @include media("<=phone") {
+            margin-right: 0;
+          }
         }
         span {
           font-family: "Poppins";
@@ -65,6 +73,13 @@
       padding-top: 3rem;
       display: flex;
       justify-content: space-between;
+      @include media("<=phone") {
+        flex-direction: column;
+        padding: 0 0rem;
+        padding-top: 3rem;
+        justify-content: center;
+        align-items: center;
+      }
       .what-we-do-big-text {
         width: 450px;
         font-family: "Poppins";
@@ -72,6 +87,10 @@
         font-weight: 500;
         font-size: 40px;
         line-height: 60px;
+        @include media("<=phone") {
+          font-size: 32px;
+          width: 300px;
+        }
         .sentence {
           overflow: hidden;
           margin-bottom: 8px;
@@ -86,11 +105,19 @@
         font-weight: 300;
         font-size: 20px;
         line-height: 30px;
-
         color: #757575;
+        @include media("<=phone") {
+          width: 300px;
+          padding-top: 2rem;
+          font-size: 16px;
+        }
       }
     }
     .what-we-do-slide-text {
+      @include media("<=phone") {
+        padding-top: 2rem;
+        font-size: 17vw;
+      }
       font-size: 14vw;
       margin: 0;
       margin-top: auto;

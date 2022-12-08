@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/components/header.scss";
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
         <div className="row v-center space-between">
           <div className="logo">
             <img src="/logo.svg" alt="" />
-            <a href="/">Stag Investments.</a>
+            <Link href="/">Stag Investments.</Link>
           </div>
           <div className="nav">
             <span className="contact-btn">About</span>

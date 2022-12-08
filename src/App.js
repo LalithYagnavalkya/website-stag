@@ -8,28 +8,29 @@ import gsap, { Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import { useEffect, useRef } from "react";
-import Whatwedo from "./components/Whatwedo";
-import Risk from "./components/Risk";
-import Contact from "./components/Contact";
 import Home from "./pages/Home";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Pricing from "./pages/Pricing";
+import {
+  Route,
+  Routes,
+  BrowserRouter,
+  createBrowserRouter,
+} from "react-router-dom";
 gsap.registerPlugin(CSSRulePlugin);
 function App() {
   // const location = useLocation();
   useEffect(() => {
     // console.log(imageReveal);
   }, []);
+
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<Home />} /> */}
-          <Route path="/pricing" element={<Pricing />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        {/* <Route path="/about" element={<Home />} /> */}
+        <Route exact path="pricing" element={<Pricing />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
