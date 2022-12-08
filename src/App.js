@@ -12,7 +12,8 @@ import Whatwedo from "./components/Whatwedo";
 import Risk from "./components/Risk";
 import Contact from "./components/Contact";
 import Home from "./pages/Home";
-import { Route, Routes, createBrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Pricing from "./pages/Pricing";
 gsap.registerPlugin(CSSRulePlugin);
 function App() {
   // const location = useLocation();
@@ -21,9 +22,13 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={Home} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about" element={<Home />} /> */}
+          <Route path="/pricing" element={<Pricing />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
