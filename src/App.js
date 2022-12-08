@@ -12,17 +12,17 @@ import Whatwedo from "./components/Whatwedo";
 import Risk from "./components/Risk";
 import Contact from "./components/Contact";
 import Home from "./pages/Home";
-import { useLocation } from "react-router-dom";
+import { Route, Routes, createBrowserRouter } from "react-router-dom";
 gsap.registerPlugin(CSSRulePlugin);
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   useEffect(() => {
     // console.log(imageReveal);
   }, []);
   return (
     <div className="App">
-      <Routes location={location} key={location.pathname}>
-        <Home />
+      <Routes>
+        <Route path="/" element={Home} />
       </Routes>
     </div>
   );
