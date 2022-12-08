@@ -6,6 +6,13 @@
   margin: 0 auto;
   height: 90%;
   margin-top: 7rem;
+  padding-bottom: 2rem;
+  hr {
+    transform-origin: left;
+    transition: transform 0.25s ease-out;
+    background-color: black;
+    margin-bottom: 1.5rem;
+  }
   @include media("<=phone") {
     .contact-container-horizontal-line {
       padding: 0 2rem;
@@ -27,6 +34,7 @@
 .contact-container-content {
   padding-top: 86px;
   display: flex;
+  padding-bottom: 2rem;
   row-gap: 14px;
   flex-direction: column;
   @include media("<=phone") {
@@ -70,7 +78,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 54px;
+        height: 44px;
         background-color: #d9d9d9;
         width: 535px;
         @include media("<=phone") {
@@ -134,7 +142,7 @@
   .contact-container-submit-btn {
     cursor: pointer;
     width: 535px;
-    height: 54px;
+    height: 44px;
     background: #1a1a1a;
     margin-top: 59px;
     display: flex;

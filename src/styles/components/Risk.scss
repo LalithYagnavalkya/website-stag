@@ -9,7 +9,7 @@
     display: flex;
     column-gap: 70px;
     @include media("<=phone") {
-      margin-top: 8rem;
+      padding-top: 20rem;
       justify-content: center;
       .background-video {
         display: none;
