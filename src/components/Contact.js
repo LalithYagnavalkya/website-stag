@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
           <div className="contact-container-row">
             <div className="contact-container-your-number contact-feild">
-              <span>Your email</span>
+              <span>Your phone number</span>
               <div className="rectangle">
                 <input type="text" />
               </div>

@@ -7,7 +7,9 @@
   height: 90%;
   margin-top: 7rem;
   @include media("<=phone") {
-    display: none;
+    .contact-container-horizontal-line {
+      padding: 0 2rem;
+    }
   }
   @include media("<=1560px") {
     width: 1280px;
@@ -27,6 +29,9 @@
   display: flex;
   row-gap: 14px;
   flex-direction: column;
+  @include media("<=phone") {
+    padding: 0 2rem;
+  }
   // align-items: center;
   .contact-container-title {
     display: flex;
@@ -45,6 +50,10 @@
   .contact-container-row {
     display: flex;
     column-gap: 40px;
+    @include media("<=phone") {
+      padding: 0 2rem;
+      flex-direction: column;
+    }
     .contact-feild {
       display: flex;
       flex-direction: column;
@@ -64,6 +73,10 @@
         height: 54px;
         background-color: #d9d9d9;
         width: 535px;
+        @include media("<=phone") {
+          height: 44px;
+          width: 100%;
+        }
         input {
           display: flex;
           justify-content: center;
@@ -101,6 +114,10 @@
         width: 1110px;
         height: 235px;
         background-color: #d9d9d9;
+        @include media("<=phone") {
+          height: 200px;
+          width: 100%;
+        }
         textarea {
           padding: 2rem;
           width: 100%;
@@ -123,6 +140,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media("<=phone") {
+      width: 100%;
+    }
     span {
       font-family: "Poppins";
       font-style: normal;
