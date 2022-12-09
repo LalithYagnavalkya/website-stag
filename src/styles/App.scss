@@ -24,8 +24,10 @@ html {
 }
 body {
   visibility: hidden;
+  overflow-x: hidden !important;
+
   @include media("<=phone") {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 }
 .container {

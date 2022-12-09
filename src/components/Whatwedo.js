@@ -40,7 +40,7 @@ const Whatwedo = () => {
         skewY: 0,
         stagger: 0.1,
         scrollTrigger: {
-          trigger: myLine.current,
+          trigger: ".sentence",
           toggleActions: "restart none none none",
           // end: "bottom 10%",
         },
