@@ -14,8 +14,8 @@ const Home = () => {
   const headlines = useRef(null);
   const myBackground = useRef(null);
   useEffect(() => {
-    let vh = window;
     gsap.registerPlugin(ScrollTrigger);
+    let vh = window;
     const tl = gsap.timeline();
     gsap.to("body", { css: { visibility: "visible" }, duration: 0 });
     tl.fromTo(
@@ -41,6 +41,10 @@ const Home = () => {
         stagger: 0.3,
       })
       .to("body", { css: { overflowY: "auto" }, duration: 0 })
+      .to(".header", {
+        css: { display: "inline" },
+        duration: 0,
+      })
       .to(".my-background-image", {
         css: { visibility: "visible" },
         duration: 0,
@@ -68,7 +72,7 @@ const Home = () => {
       );
   }, []);
   return (
-    <div className="App">
+    <div className="App" id="smooth-content">
       <IntroOverlay />
       <Header />
       <Banner headlines={headlines} myBackground={myBackground} />

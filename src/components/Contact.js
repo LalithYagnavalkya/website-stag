@@ -21,7 +21,7 @@ const Contact = () => {
     );
   }, []);
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact-section-page">
       <div className="contact-container-horizontal-line">
         <hr ref={myLine} />
       </div>
