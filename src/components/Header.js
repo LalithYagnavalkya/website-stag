@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 import "../styles/components/header.scss";
 const Header = () => {
+  const navigation = useNavigate();
+
   return (
     <div className="header">
       <div className="container">
@@ -24,7 +27,7 @@ const Header = () => {
               <span>Contact us</span>
             </Link>
             <div className="price-btn">
-              <span>Pricing</span>
+              <span onClick={() => navigation("/pricing")}>Pricing</span>
             </div>
           </div>
         </div>

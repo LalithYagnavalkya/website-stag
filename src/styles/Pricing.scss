@@ -1,7 +1,6 @@
 .pricing-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   visibility: visible;
   padding: 4rem;
   // justify-content: center;
@@ -10,7 +9,13 @@
   font-family: "poppins";
   .pricing-header {
     width: 100%;
-    padding-bottom: 5rem;
+    span {
+      cursor: pointer;
+      &:hover {
+        color: rgb(0, 73, 141);
+        transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+    }
   }
   .cards-holder {
     display: flex;
@@ -18,58 +23,13 @@
     padding: 4rem;
     justify-content: space-between;
     column-gap: 40px;
-    .pricing-card {
-      width: calc(400px - 40px);
-      display: flex;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      flex-direction: column;
-      row-gap: 24px;
-      height: calc(668px - 40px);
-      border-radius: 20px;
-      padding: 40px;
-      background: #161616;
-      overflow: hidden;
-      position: relative;
-      .pricing-card-title {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 32px;
-        color: #ffffff;
-        line-height: 48px;
-        span {
-          font-weight: 600;
-        }
-      }
-      .pricing-card-main-description {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 24px;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        row-gap: 24px;
-      }
-      .pricing-logo {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: -15%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          height: 440px;
-        }
-      }
-    }
+
     .pricing-card-white {
       width: calc(400px - 40px);
       display: flex;
       flex-direction: column;
       row-gap: 24px;
-      height: calc(668px - 40px);
+      min-height: calc(668px - 40px);
       border-radius: 20px;
       padding: 40px;
       align-items: center;
@@ -81,6 +41,7 @@
         display: flex;
         column-gap: 10px;
         align-items: center;
+        align-self: flex-start;
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
@@ -107,6 +68,38 @@
           justify-content: flex-start;
           align-items: center;
           column-gap: 8px;
+        }
+      }
+      .pricing-amount-section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .option-amount {
+          padding-bottom: 20px;
+          span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            /* or 125% */
+          }
+        }
+        .pricing-choose-btn {
+          width: 100%;
+          height: 64px;
+          left: 24px;
+          bottom: 24px;
+          border-radius: 12px;
+          background: #161616;
+          font-weight: 600;
+          font-size: 22px;
+          text-align: center;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
