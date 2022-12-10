@@ -3,6 +3,7 @@ import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
 import "../styles/components/banner.scss";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
+import { Link } from "react-router-dom";
 
 const Banner = ({ headlines, myBackground }) => {
   let rule1 = CSSRulePlugin.getRule(".my-background-image:after");
@@ -35,9 +36,9 @@ const Banner = ({ headlines, myBackground }) => {
           </>
 
           <div className="btn-row">
-            <a href="/pricing">
+            <Link to="/pricing">
               Look at our pricing <RightArrow />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

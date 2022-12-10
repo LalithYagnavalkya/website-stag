@@ -12,6 +12,9 @@
     transition: transform 0.25s ease-out;
     background-color: black;
     margin-bottom: 1.5rem;
+    @include media("<=desktop") {
+      width: 80%;
+    }
   }
   @include media("<=phone") {
     .contact-container-horizontal-line {
@@ -40,10 +43,16 @@
   @include media("<=phone") {
     padding: 0 2rem;
   }
+
   // align-items: center;
   .contact-container-title {
     display: flex;
     flex-direction: column;
+    @include media("<=desktop") {
+      padding: 0 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
     span {
       display: flex;
       font-family: "Poppins";
@@ -61,6 +70,11 @@
     @include media("<=phone") {
       padding: 0 2rem;
       flex-direction: column;
+    }
+    @include media("<=desktop") {
+      padding: 0 2rem;
+      flex-direction: column;
+      align-items: center;
     }
     .contact-feild {
       display: flex;
@@ -126,6 +140,10 @@
           height: 200px;
           width: 100%;
         }
+        @include media("<=desktop") {
+          width: 535px;
+          height: 200px;
+        }
         textarea {
           padding: 2rem;
           width: 100%;
@@ -150,6 +168,9 @@
     align-items: center;
     @include media("<=phone") {
       width: 100%;
+    }
+    @include media("<=desktop") {
+      align-self: center;
     }
     span {
       font-family: "Poppins";

@@ -87,9 +87,14 @@
         font-weight: 500;
         font-size: 40px;
         line-height: 60px;
+
         @include media("<=phone") {
           font-size: 32px;
           width: 300px;
+        }
+        @include media("<=desktop") {
+          font-size: 32px;
+          width: 350px;
         }
         .sentence {
           overflow: hidden;
@@ -111,6 +116,10 @@
           padding-top: 2rem;
           font-size: 16px;
         }
+        @include media("<=desktop") {
+          font-size: 16px;
+          width: 350px;
+        }
       }
     }
     .what-we-do-slide-text {
@@ -119,6 +128,10 @@
         padding-top: 2rem;
         font-size: 16vw;
         overflow: hidden;
+      }
+      @include media("<=desktop") {
+        // font-size: 13vw;
+        padding-bottom: 2rem;
       }
       overflow: hidden;
       margin-top: auto;

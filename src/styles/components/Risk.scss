@@ -7,6 +7,7 @@
     position: relative;
     display: flex;
     column-gap: 70px;
+
     @include media("<=phone") {
       padding-top: 20rem;
       justify-content: center;
@@ -15,13 +16,17 @@
       }
     }
     .background-video {
-      overflow: hidden;
+      // overflow: hidden;
       margin-bottom: -4px;
       video {
         margin-top: -1px;
         width: 55vw;
         object-fit: contain;
         object-position: center;
+        @include media("<=desktop") {
+          width: 55vw;
+          margin-top: -2px;
+        }
       }
     }
 
@@ -43,6 +48,10 @@
         @include media("<=phone") {
           font-size: 32px;
         }
+        @include media("<=desktop") {
+          font-size: 24px;
+          line-height: 10px;
+        }
       }
       p {
         width: 570px;
@@ -55,6 +64,10 @@
         @include media("<=phone") {
           font-size: 16px;
           width: 300px;
+        }
+        @include media("<=desktop") {
+          font-size: 16px;
+          width: 380px;
         }
       }
     }
@@ -75,6 +88,9 @@
       width: 45vw;
       height: 70vh;
       overflow: hidden;
+      @include media("<=desktop") {
+        width: 45vw;
+      }
       video {
         margin-left: -4px;
         margin-top: -1px;
@@ -96,6 +112,9 @@
         width: 447px;
         color: #0c0c0c;
         @include media("<=phone") {
+          font-size: 32px;
+        }
+        @include media("<=desktop") {
           font-size: 32px;
         }
       }
