@@ -107,6 +107,7 @@
       @include media("<=phone") {
         right: 0rem;
         width: 100%;
+        display: none;
       }
       img {
         @include media("<=phone") {

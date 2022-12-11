@@ -60,13 +60,14 @@
         font-size: 20px;
         line-height: 171%;
         color: #757575;
-        @include media("<=phone") {
-          font-size: 16px;
-          width: 300px;
-        }
+
         @include media("<=desktop") {
           font-size: 16px;
           width: 380px;
+        }
+        @include media("<=phone") {
+          font-size: 16px;
+          width: 340px;
         }
       }
     }
