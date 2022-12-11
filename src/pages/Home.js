@@ -95,7 +95,7 @@ const Home = () => {
         <Social />
         <Sebi />
         {isPricingPageOpen && (
-          <motion.div className="testing" initial={} animate={}>
+          <motion.div className="testing">
             <Pricing togglePricingPage={togglePricingPage} />
           </motion.div>
         )}
