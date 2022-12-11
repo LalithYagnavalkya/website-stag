@@ -21,7 +21,7 @@ const Whatwedo = () => {
         ease: "circ.easeIn",
         duration: 0.8,
         scrollTrigger: {
-          trigger: myLine.current,
+          trigger: "sentence",
           toggleActions: "restart none none none",
           // end: "bottom 10%",
         },
@@ -46,23 +46,6 @@ const Whatwedo = () => {
         },
       }
     );
-    // gsap.from(
-    //   ".sentence div",
-    //   {
-    //     y: 100,
-    //     skewY: 0,
-    //     duration: 1.0,
-    //     ease: "power4.out",
-    //     delay: 0.2,
-    //     stagger: 0.2,
-    //     scrollTrigger: {
-    //       trigger: myLine.current,
-    //       toggleActions: "restart none none none",
-    //       // end: "bottom 10%",
-    //     },
-    //   },
-
-    // );
   }, []);
 
   return (

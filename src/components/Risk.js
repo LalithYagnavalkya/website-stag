@@ -1,9 +1,34 @@
-import React from "react";
+import gsap from "gsap";
+import React, { useEffect } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import books from "../assets/books_AdobeExpress 1.mp4";
-import map from "../assets/mapHD_AdobeExpress.mp4";
+import map from "../assets/tree.mp4";
 import "../styles/components/Risk.scss";
 import Contact from "./Contact";
 const Risk = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".sentence div",
+      {
+        y: 200,
+        skewY: 7,
+      },
+      {
+        duration: 1.2,
+        ease: "power4.out",
+        delay: 0.3,
+        y: 0,
+        skewY: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".risk-row-2",
+          toggleActions: "restart none none none",
+          // end: "bottom 10%",
+        },
+      }
+    );
+  }, []);
+
   return (
     <div className="risk-container">
       <div className="risk-horizontal-line">
@@ -38,8 +63,18 @@ const Risk = () => {
       <div className="risk-row-2">
         <div className="risk-content">
           <div className="risk-content-text">
-            We are looking for Crypto Analysts and Block Chain experts having 2
-            years of experience.
+            <div className="sentence">
+              <div>We are looking for Crypto</div>
+            </div>
+            <div className="sentence">
+              <div>Analysts and Block Chain</div>
+            </div>
+            <div className="sentence">
+              <div>experts having 2 years of</div>
+            </div>
+            <div className="sentence">
+              <div>experience.</div>
+            </div>
           </div>
         </div>
         <div className="background-video map">

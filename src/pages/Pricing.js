@@ -55,7 +55,7 @@ const prices = [
     duriation: "valid for year",
   },
 ];
-const Pricing = () => {
+const Pricing = ({ togglePricingPage }) => {
   const navigation = useNavigate();
   useEffect(() => {
     console.log("pricning");
@@ -64,7 +64,7 @@ const Pricing = () => {
   return (
     <div className="pricing-page">
       <div className="pricing-header">
-        <span onClick={() => navigation(-1)}>back</span>
+        <span onClick={() => togglePricingPage(false)}>back</span>
       </div>
       <div className="cards-holder">
         {/* <div className="pricing-card">

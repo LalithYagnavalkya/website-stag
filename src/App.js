@@ -16,6 +16,7 @@ import {
   BrowserRouter,
   createBrowserRouter,
 } from "react-router-dom";
+import Sebi from "./components/sebi";
 gsap.registerPlugin(CSSRulePlugin);
 function App() {
   // const location = useLocation();
@@ -28,7 +29,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         {/* <Route path="/about" element={<Home />} /> */}
-        <Route exact path="pricing" element={<Pricing />} />
+        {/* <Route exact path="pricing" element={<Pricing />} /> */}
       </Routes>
     </BrowserRouter>
   );

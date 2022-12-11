@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 import "../styles/components/header.scss";
-const Header = () => {
+const Header = ({ togglePricingPage }) => {
   const navigation = useNavigate();
 
   return (
@@ -13,6 +13,11 @@ const Header = () => {
           <div className="logo">
             <img src="/logo.svg" alt="" />
             <Link>Stag Investments.</Link>
+          </div>
+          <div className="nav-for-phone">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div className="nav">
             <span className="contact-btn">About</span>
@@ -26,8 +31,8 @@ const Header = () => {
             >
               <span>Contact us</span>
             </Link>
-            <div className="price-btn">
-              <span onClick={() => navigation("/pricing")}>Pricing</span>
+            <div className="price-btn" onClick={() => togglePricingPage(true)}>
+              <span>Pricing</span>
             </div>
           </div>
         </div>
