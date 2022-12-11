@@ -14,9 +14,9 @@ const Risk = () => {
         skewY: 7,
       },
       {
-        duration: 1.2,
+        duration: 0.9,
         ease: "power4.out",
-        delay: 0.3,
+        delay: 0.1,
         y: 0,
         skewY: 0,
         stagger: 0.1,
