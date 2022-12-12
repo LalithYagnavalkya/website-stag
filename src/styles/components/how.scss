@@ -1,0 +1,106 @@
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+.how-section {
+  background-color: $white;
+  .what-we-do-horizontal-line {
+    padding: 0 6rem;
+    overflow: hidden;
+    @include media("<=phone") {
+      overflow: visible;
+      padding: 0 2rem;
+    }
+    hr {
+      transform-origin: left;
+      transition: transform 0.25s ease-out;
+      background-color: black;
+      margin-bottom: 1.5rem;
+    }
+
+    .what-we-do-horizontal-line-sub-texts {
+      display: flex;
+      justify-content: space-between;
+      .what-we-do-section-name {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+      }
+      span:nth-child(2) {
+        margin-right: -25rem;
+        @include media("<=phone") {
+          margin-right: 0;
+        }
+      }
+      span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #757575;
+      }
+    }
+  }
+  padding: 3rem 6rem;
+  .how-row {
+    padding: 3rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: "poppins";
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+    .how-left-div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 45px;
+      .how-title {
+        width: 447px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: #0c0c0c;
+      }
+      .how-desc {
+        width: 366px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        color: #757575;
+      }
+    }
+    .how-right-div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      .share-type-holder {
+        overflow: hidden;
+        .container-share {
+          display: flex;
+          align-items: center;
+          column-gap: 22px;
+        }
+        .share-percent {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+
+          color: #757575;
+        }
+        .share-name {
+          font-family: "Poppins";
+          text-transform: capitalize;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 40px;
+          color: #0c0c0c;
+        }
+      }
+    }
+  }
+}

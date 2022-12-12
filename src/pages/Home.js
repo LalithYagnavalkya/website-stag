@@ -6,6 +6,7 @@ import { useState } from "react";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import How from "../components/How";
 import IntroOverlay from "../components/IntroOverlay";
 import Risk from "../components/Risk";
 import Sebi from "../components/Sebi";
@@ -90,6 +91,7 @@ const Home = () => {
         <Header togglePricingPage={togglePricingPage} />
         <Banner headlines={headlines} myBackground={myBackground} />
         <Whatwedo />
+        <How />
         <Risk />
         <Footer />
         <Social />
