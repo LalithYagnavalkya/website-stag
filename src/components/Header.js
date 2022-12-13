@@ -26,7 +26,19 @@ const Header = ({ togglePricingPage }) => {
               <>
                 {/* <div className="nav-setting-header">back</div> */}
                 <div className="nav-setting-pages">
-                  <span>About</span>
+                   <Link
+              className="contact-btn"
+              to="what-we-do-container-section"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+            <span   onClick={() => {
+                      toggleNav(false);
+                    }}className="contact-btn">About</span>
+            </Link>
+                 
                   <span
                     onClick={() => {
                       togglePricingPage(true);
@@ -50,7 +62,16 @@ const Header = ({ togglePricingPage }) => {
             </div>
           )}
           <div className="nav">
+             <Link
+              className="contact-btn"
+              to="what-we-do-container-section"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
             <span className="contact-btn">About</span>
+            </Link>
             <Link
               className="contact-btn"
               to="contact-section-page"

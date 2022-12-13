@@ -50,7 +50,7 @@ const Whatwedo = () => {
 
   return (
     <div className="what-we-do-main">
-      <section className="what-we-do-container">
+      <section className="what-we-do-container" id='what-we-do-container-section'>
         <div className="what-we-do-horizontal-line">
           <hr ref={myLine} />
           <div className="what-we-do-horizontal-line-sub-texts">
