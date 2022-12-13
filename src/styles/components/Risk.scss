@@ -15,11 +15,12 @@
       }
     }
     .background-video {
-      // overflow: hidden;
+      overflow: hidden;
       margin-bottom: -4px;
       video {
-        margin-top: -1px;
+        margin-top: -2px;
         width: 55vw;
+        max-width: 1056px;
         object-fit: contain;
         object-position: center;
         @include media("<=desktop") {
