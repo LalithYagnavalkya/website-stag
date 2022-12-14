@@ -74,11 +74,11 @@ const Home = () => {
           ease: "expo.inOut",
         }
       )
-      .fromTo(".header", { y: -300 }, { y: 0, duration: 1.3, delay: -0.5 })
+      .fromTo(".header", { y: -300 }, { y: 0, duration: 1.3, delay: -1.8 })
       .fromTo(
         ".social-icons",
-        { x: 200 },
-        { x: 0, duration: 1.3, delay: -1.2, stagger: 1 }
+        { x: 200, opacity: 0 },
+        { x: 0,opacity: 1, duration: 1.3, delay: -1.5, stagger: 1 }
       )
       .to(".intro-overlay", {
         css: { display: "none" },

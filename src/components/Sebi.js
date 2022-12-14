@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Sebi = () => {
-  return <Sebistyles>We are not SEBI registered</Sebistyles>;
+  return <Sebistyles>We are not SEBI registered yet*</Sebistyles>;
 };
 
 export default Sebi;

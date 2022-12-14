@@ -90,7 +90,7 @@ const Whatwedo = () => {
           </div>
         </div>
         <motion.div className="what-we-do-slide-text" style={{ x }}>
-          Invest Better
+          Invest Better``
         </motion.div>
       </section>
     </div>
