@@ -81,11 +81,11 @@ const Whatwedo = () => {
             </div>
           </div>
           <div className="what-we-do-small-text">
-            The Krypto Knight assists clients with multiple interactive services
+            Stag Investments assists clients with multiple interactive services
             into the huge untapped market with a recipe to success. Our methods
             have been tried and tested by major expert analysts and investors,
             approving our successful formula with professional background
-            credibility, The Krypto Knight is here to ensure that your financial
+            credibility, We are here to ensure that your financial
             present and future are on the path to success.
           </div>
         </div>
